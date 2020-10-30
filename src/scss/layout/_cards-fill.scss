@@ -1,0 +1,55 @@
+.section__fill--collapsable {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.element-form {
+  display: block;
+  font-size: 14px;
+  font-family: $font-main;
+}
+
+.input-github {
+  margin-bottom: 30px;
+}
+
+.form-input {
+  border: 1px solid $color-primary-light;
+  height: 30px;
+  margin: 7px 0 20px 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-file {
+  display: none;
+}
+
+.button--wrapper {
+  display: flex;
+  margin: 7px 20px 20px 0;
+}
+
+.button--file {
+  width: 140px;
+  height: 30px;
+  background-color: $color-secondary;
+  color: $color-white;
+  border: 1px solid $color-secondary;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.image--profile-preview {
+  height: 30px;
+  width: 30px;
+  border: 1px solid $color-primary-light;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #ccc;
+}

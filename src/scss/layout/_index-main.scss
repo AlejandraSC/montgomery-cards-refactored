@@ -1,0 +1,125 @@
+.main {
+  background-color: $color-background;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 95px 28px 30px 27.2px;
+
+  @media all and (min-width: 768px) {
+    padding: 350px 174px 31px 175px;
+  }
+
+  &__logo {
+    &--img {
+      width: 224px;
+      height: 83px;
+
+      @media all and (min-width: 768px) {
+        width: 406px;
+        height: 148px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__text {
+    margin-top: 35.4px;
+    margin-bottom: 17.8px;
+
+    @media all and (min-width: 768px) {
+      margin-bottom: 27px;
+    }
+
+    &--title {
+      font-family: $font-title;
+      font-weight: bold;
+      color: $color-secondary;
+      font-size: 19.2px;
+
+      @media all and (min-width: 768px) {
+        font-size: 24px;
+      }
+    }
+
+    &--description {
+      font-family: $font-main;
+      color: $color-primary-dark;
+      font-size: 12.8px;
+
+      @media all and (min-width: 768px) {
+        font-size: 16px;
+        width: 331px;
+      }
+    }
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    width: 268px;
+    padding: 15px 20px 10px 20px;
+    border: 1.6px solid $color-secondary-light;
+    border-radius: 4px;
+
+    @media all and (min-width: 768px) {
+      width: 325px;
+      justify-content: space-around;
+    }
+
+    &--icon {
+      width: 60px;
+      height: 48.8px;
+      color: $color-secondary;
+
+      &-name {
+        color: $color-black-light;
+        font-size: 12.8px;
+        font-family: $font-main;
+
+        @media all and (min-width: 768px) {
+          font-size: 16px;
+        }
+      }
+
+      &-image {
+        font-size: 22.4px;
+
+        @media all and (min-width: 768px) {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 48.6px;
+    margin-bottom: 30px;
+    border: $color-primary solid;
+    border-radius: 21px;
+    padding: 10px 20px;
+    background-color: $color-primary;
+    &:hover {
+      background-color: $color-secondary;
+      border: solid $color-secondary;
+    }
+
+    @media all and (min-width: 768px) {
+      margin-top: 186px;
+      margin-bottom: 59px;
+      padding: 10px 20.5px 10px 19.5px;
+    }
+
+    &--link {
+      color: $color-background;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: $font-main;
+      font-weight: 600;
+    }
+  }
+}
