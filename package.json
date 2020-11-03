@@ -1,40 +1,42 @@
 {
-	"name": "adalab-web-starter-kit",
-	"version": "3.0.0",
-	"description": "Adalab web starter kit",
-	"dependencies": {
-		"browser-sync": "^2.26.12",
-		"del": "^5.1.0",
-		"eslint": "^7.1.0",
-		"gulp": "^4.0.2",
-		"gulp-autoprefixer": "*",
-		"gulp-clean-css": "*",
-		"gulp-combine-mq": "*",
-		"gulp-concat": "*",
-		"gulp-html-tag-include": "^1.0.1",
-		"gulp-notify": "*",
-		"gulp-plumber": "*",
-		"gulp-rename": "*",
-		"gulp-sass": "^4.1.0",
-		"gulp-sourcemaps": "*",
-		"gulp-uglify-es": "^2.0.0",
-		"gulp-zip": "*",
-		"run-sequence": "*"
-	},
-	"devDependencies": {
-		"lodash.template": ">=4.5.0"
-	},
-	"scripts": {
-		"start": "./node_modules/.bin/gulp",
-		"docs": "rm -rf docs && ./node_modules/.bin/gulp docs",
-		"push-docs": "rm -rf docs && gulp docs && git add docs/* && git commit -m \"Update docs\" && git push",
-		"deploy": "npm run push-docs"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+ssh://git@github.com:Adalab/adalab-web-starter-kit.git"
-	},
-	"author": "Adalab",
-	"license": "MIT",
-	"homepage": "https://github.com/adalab/adalab-web-starter-kit"
+  "name": "my-react-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "node-sass": "^4.14.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.0",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+      
+
+    ]
+    
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

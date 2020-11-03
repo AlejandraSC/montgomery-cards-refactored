@@ -1,26 +1,70 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
+# Getting Started with Create React App
 
-# Proyecto final del módulo 2 del grupo 4
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Hemos realizado una aplicación web que permite a las usuarias crear online su tarjeta de visita personalizada (datos, colores...) y compartirla en Twitter con un enlace generado a través de una petición a servidor.
+## Available Scripts
 
-Para su desarrollo nos hemos basado en las siguientes historias de usuario:
+In the project directory, you can run:
 
-1. Landing y UI de la herramienta
+### `npm start`
 
-- Uso avanzado de formularios HTML.
-- Maquetación usando CSS avanzado.
-- Uso de mediaqueries para que el diseño sea adaptable al dispositivo usando la estrategia mobile first.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-2. Versión interactiva
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-- Gestión de eventos en el navegador: las secciones aparecen colapsadas y se despliegan cuando la usuaria clica en ellas, la información de los inputs y la imagen se muestran en la tarjeta de previsualización, la tarjeta cambia de color según la paleta seleccionada, el botón de reset restablece toda la información...
+### `npm test`
 
-3. Compartir
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- Acceso y envío de datos a un servidor para generar el enlace de la tarjeta creada por la usuaria.
-- Habilitación de un botón para compartir el enlace generado en Twitter con un mensaje predeterminado.
+### `npm run build`
 
-4. Versión offline
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- Almacenamiento en local usando LocalStorage gracias a la definición de una estructura de datos compleja.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
