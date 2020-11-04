@@ -1,14 +1,17 @@
-import white_design from '../images/white_design.png';
-import './App.scss';
+import React from 'react';
+import Header from './Header';
+// import './Header.scss';
+import Footer from './Footer';
+import Main from './Main';
+import Preview from './Preview';
 
 function App() {
   return (
     <>
-      <header class="header">
-        <a href="./index.html">
-          <img class="header--logo" src={white_design} />
-        </a>
-      </header>
+      <Header></Header>
+      <Main></Main>
+      <Preview></Preview>
+      <Footer></Footer>
     </>
   );
 }
