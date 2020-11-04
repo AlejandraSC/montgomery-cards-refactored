@@ -1,5 +1,5 @@
-import white_design from "../images/white_design.png";
-import "./App.scss";
+import white_design from '../images/white_design.png';
+import './App.scss';
 
 function App() {
   return (
