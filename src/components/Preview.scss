@@ -1,98 +1,98 @@
 @import "./reset.scss";
 
 .section__card {
-    background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 38px 35px 40px 45px;
+  background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 35px 40px 45px;
   
-    @media all and (min-width: 768px) {
-      padding: 223px 44px 260px 45px;
-      width: 330px;
-      border-radius: 6px;
-      margin: 20px 40px 20px 0;
-    }
-  
-    @media all and (min-width: 1024px) {
-      padding: 223px 172px 260px 173px;
-      width: 585px;
-    }
+  @media all and (min-width: 768px) {
+    padding: 223px 44px 260px 45px;
+    width: 330px;
+    border-radius: 6px;
+    margin: 20px 40px 20px 0;
   }
   
-  .button--reset {
-    width: 75px;
-    height: 30px;
-    margin-bottom: 20px;
-    border-radius: 15px;
-     border: 1px solid $color-white;
-    background-color: transparent;
-     color: $color-cuaternary;
-    font-size: 12px;
-    cursor: pointer;
-    &:hover {
-       background-color: $color-white;
-       border: 1px solid $color-cuaternary;
+  @media all and (min-width: 1024px) {
+    padding: 223px 172px 260px 173px;
+   width: 585px;
+  }
+}
+  
+.button--reset {
+  width: 75px;
+  height: 30px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border: 1px solid $color-white;
+  background-color: transparent;
+  color: $color-cuaternary;
+  font-size: 12px;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-white;
+    border: 1px solid $color-cuaternary;
     background-color: white;
-    }
   }
+}
   
-  .fa-trash,
-  .fa-twitter,
-  .fa-id-card {
-    margin-right: 8px;
-  }
+.fa-trash,
+.fa-twitter,
+.fa-id-card {
+  margin-right: 8px;
+}
   
-  .section__article {
-     background-color: $color-white;
-     font-family: $font-card;
-    width: 240px;
-    padding: 21px 0 12px 0;
+.section__article {
+  background-color: $color-white;
+  font-family: $font-card;
+  width: 240px;
+  padding: 21px 0 12px 0;
   
-    &--title {
-      font-size: 18px;
-      margin: 0 14px 4px 20px;
-       color: $color-primary-dark;
-    }
-  
-    &--subtitle {
-      font-size: 16px;
-      font-weight: normal;
-      margin: 0 0 10px 20px;
-       color: $color-cuaternary;
-    }
-  
-    &--image {
-      width: 100%;
-      height: 200px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border: 1px solid #ccc;
-      width: 100%;
-      background-image: url('../images/lisa_simpson.png');
-    }
-  
-    &--wrapper {
-       border-left: 5px solid $color-primary;
-    border-left: 5px;
-    }
-  }
-  
-  .icons__list {
-    list-style: none;
+ &--title {
     font-size: 18px;
-    margin: 10px 0 0 20px;
-  
-    &--item {
-      display: inline-block;
-       border: solid 2px $color-primary-light;
-      border-radius: 16px;
-      width: 32px;
-      height: 32px;
-      margin-right: 5px;
-      text-align: center;
-      padding-top: 3px;
-    }
+    margin: 0 14px 4px 20px;
+    color: $color-primary-dark;
   }
+  
+  &--subtitle {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 10px 20px;
+    color: $color-cuaternary;
+  }
+  
+  &--image {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #ccc;
+    width: 100%;
+    background-image: url('../images/lisa_simpson.png');
+  }
+  
+  &--wrapper {
+    border-left: 5px solid $color-primary;
+    border-left: 5px;
+  }
+}
+  
+.icons__list {
+  list-style: none;
+  font-size: 18px;
+  margin: 10px 0 0 20px;
+  
+  &--item {
+    display: inline-block;
+    border: solid 2px $color-primary-light;
+    border-radius: 16px;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    text-align: center;
+    padding-top: 3px;
+  }
+}
   

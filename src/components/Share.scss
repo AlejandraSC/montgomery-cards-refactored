@@ -1,71 +1,70 @@
 @import "./reset.scss";
-
 .section__share {
-    text-align: center;
-    &--title {
-      text-align: left;
-    }
-    &--subtitle {
-      font-size: 18px;
-      margin-bottom: 5px;
-    }
+  text-align: center;
+  &--title {
+    text-align: left;
   }
-  
-  .section__share--collapsable {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  
-  .button--create {
-    width: 200px;
-    height: 50px;
-    background-color: $color-secondary;
-    border-radius: 12px;
-    border: 0.5px solid $color-secondary;
-    color: $color-white;
+  &--subtitle {
     font-size: 18px;
-    cursor: pointer;
-    margin-bottom: 30px;
-    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-    &:hover {
-      background-color: #feae62;
-      border: 0.5px solid #feae62;
-    }
+    margin-bottom: 5px;
   }
+}
   
-  .change-button {
-    background-color: #d5d5d5;
-    border: 0.5px solid #d5d5d5;
-  }
+.section__share--collapsable {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
   
-  .section__link {
-    text-align: center;
-    margin: 10px 0 20px 0;
-    &--share {
-      border-bottom: solid 1px #d8d8d8;
-      margin-bottom: 20px;
-    }
+.button--create {
+  width: 200px;
+  height: 50px;
+  background-color: $color-secondary;
+  border-radius: 12px;
+  border: 0.5px solid $color-secondary;
+  color: $color-white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  &:hover {
+    background-color: #feae62;
+    border: 0.5px solid #feae62;
   }
+}
   
-  .link--share {
-    color: $color-secondary;
-    display: block;
-    font-size: 12px;
-    margin-bottom: 10px;
-  }
+.change-button {
+  background-color: #d5d5d5;
+  border: 0.5px solid #d5d5d5;
+}
   
-  .button--share {
-    background-color: #00a0f5;
-    color: $color-white;
-    text-decoration: none;
-    font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 3px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+.section__link {
+  text-align: center;
+  margin: 10px 0 20px 0;
+  &--share {
+    border-bottom: solid 1px #d8d8d8;
+    margin-bottom: 20px;
   }
+}
   
-  .hidden--border {
-    border-bottom: none !important;
-  }
+.link--share {
+  color: $color-secondary;
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+  
+.button--share {
+  background-color: #00a0f5;
+  color: $color-white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+}
+ 
+.hidden--border {
+  border-bottom: none !important;
+}
   

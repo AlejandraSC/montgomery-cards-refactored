@@ -1,7 +1,7 @@
 import React from 'react';
-import './Fill.scss';
+import './CardsFill.scss';
 
-class Fill extends React.Component {
+class CardsFill extends React.Component {
   render() {
     return (
       <fieldset className="fieldset form--fill">
@@ -113,4 +113,4 @@ class Fill extends React.Component {
   }
 }
 
-export default Fill;
+export default CardsFill;

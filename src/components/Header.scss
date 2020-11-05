@@ -1,16 +1,16 @@
- @import "./reset.scss";
+@import "./reset.scss";
 
- .header {
-     height: 111px;
-     background-color: $color-white;
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     justify-content: flex-start;
-     margin-left: 40px;
-   }
-
-   .header--logo {
-     height: 87px;
-     width: 218px;
-   }
+.header {
+  height: 111px;
+  background-color: $color-white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 40px;
+}
+.header--logo {
+  height: 87px;
+  width: 218px;
+    
+}

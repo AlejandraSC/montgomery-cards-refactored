@@ -1,47 +1,47 @@
 @import "./reset.scss";
 
- .main__cards {
-     width: 100%;
-     @media all and (min-width: 768px) {
-       background: linear-gradient(to bottom, #f5f5f5, #ffffff);
-       display: flex;
-       flex-direction: row-reverse;
-       justify-content: center;
-     }
-   }
+.main__cards {
+  width: 100%;
+  @media all and (min-width: 768px) {
+    background: linear-gradient(to bottom, #f5f5f5, #ffffff);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+}
+
+.form {
+  font-family: $font-main;
+  color: $color-cuaternary;
+  background: linear-gradient(to bottom, #f5f5f5, #ffffff);
+  padding: 27px 20px 31px 20px;
+  @media all and (min-width: 768px) {
+    padding: 27px 20px 31px 40px;
+    width: 100%;
+  }
+}
   
-   .form {
-      font-family: $font-main;
-      color: $color-cuaternary;
-     background: linear-gradient(to bottom, #f5f5f5, #ffffff);
-     padding: 27px 20px 31px 20px;
-     @media all and (min-width: 768px) {
-       padding: 27px 20px 31px 40px;
-       width: 100%;
-     }
-   }
+.fieldset {
+  border: none;
+  border-bottom: solid 1px $color-border;
+  margin: 10px 0 10px 0;
+}
   
-   .fieldset {
-     border: none;
-      border-bottom: solid 1px $color-border;
-     margin: 10px 0 10px 0;
-   }
+.link {
+  color: $color-primary-dark;
+  text-decoration: none;
+}
   
-   .link {
-      color: $color-primary-dark;
-     text-decoration: none;
-   }
+.form--icons {
+  color: $color-secondary;
+  margin-right: 10px;
+}
   
-   .form--icons {
-      color: $color-secondary;
-     margin-right: 10px;
-   }
+.button--collapsable {
+  cursor: pointer;
+}
   
-   .button--collapsable {
-     cursor: pointer;
-   }
-  
-   .margins {
-     margin-top: 25px !important;
-   }
+.margins {
+  margin-top: 25px !important;
+}
   
