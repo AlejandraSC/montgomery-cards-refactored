@@ -4,46 +4,52 @@ import './Preview.scss';
 class Preview extends React.Component {
   render() {
     return (
-      <section class="section__card">
-        <div class="section__card--wrapper">
+      <section className="section__card">
+        <div className="section__card--wrapper">
           <button
             type="button"
-            class="uppercase button--reset js-button--reset"
+            className="uppercase button--reset js-button--reset"
           >
-            <i class="fa fa-trash" aria-hidden="true"></i>Reset
+            <i className="fa fa-trash" aria-hidden="true"></i>Reset
           </button>
-          <article class="section__article">
-            <div class="section__article--wrapper">
-              <h2 class="section__article--title js-cardName">Lisa Simpson</h2>
-              <h3 class="section__article--subtitle js-cardPosition">
+          <article className="section__article">
+            <div className="section__article--wrapper">
+              <h2 className="section__article--title js-cardName">
+                Lisa Simpson
+              </h2>
+              <h3 className="section__article--subtitle js-cardPosition">
                 Saxophonist
               </h3>
             </div>
-            <div class="section__article--image js__profile-image"></div>
-            <nav class="section__article--icons">
-              <ul class="icons__list">
-                <li class="icons__list--item js-item">
-                  <a class="link js-cardPhone" href="tel:">
-                    <i class="fa fa-mobile" aria-hidden="true"></i>
+            <div className="section__article--image js__profile-image"></div>
+            <nav className="section__article--icons">
+              <ul className="icons__list">
+                <li className="icons__list--item js-item">
+                  <a className="link js-cardPhone" href="tel:">
+                    <i className="fa fa-mobile" aria-hidden="true"></i>
                   </a>
                 </li>
-                <li class="icons__list--item js-item1">
-                  <a class="link js-cardEmail" href="mailto:">
-                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <li className="icons__list--item js-item1">
+                  <a className="link js-cardEmail" href="mailto:">
+                    <i className="fa fa-envelope-o" aria-hidden="true"></i>
                   </a>
                 </li>
-                <li class="icons__list--item js-item2">
+                <li className="icons__list--item js-item2">
                   <a
-                    class="link js-cardLinkedin"
+                    className="link js-cardLinkedin"
                     href="https://"
                     target="_blank"
                   >
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i className="fa fa-linkedin" aria-hidden="true"></i>
                   </a>
                 </li>
-                <li class="icons__list--item js-item3">
-                  <a class="link js-cardGithub" href="https://" target="_blank">
-                    <i class="fa fa-github-alt" aria-hidden="true"></i>
+                <li className="icons__list--item js-item3">
+                  <a
+                    className="link js-cardGithub"
+                    href="https://"
+                    target="_blank"
+                  >
+                    <i className="fa fa-github-alt" aria-hidden="true"></i>
                   </a>
                 </li>
               </ul>

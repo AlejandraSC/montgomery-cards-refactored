@@ -1,3 +1,5 @@
+@import "./reset.scss";
+
 .section__card {
     background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
     display: flex;
@@ -23,14 +25,14 @@
     height: 30px;
     margin-bottom: 20px;
     border-radius: 15px;
-    // border: 1px solid $color-white;
+     border: 1px solid $color-white;
     background-color: transparent;
-    // color: $color-cuaternary;
+     color: $color-cuaternary;
     font-size: 12px;
     cursor: pointer;
     &:hover {
-    //   background-color: $color-white;
-    //   border: 1px solid $color-cuaternary;
+       background-color: $color-white;
+       border: 1px solid $color-cuaternary;
     background-color: white;
     }
   }
@@ -42,22 +44,22 @@
   }
   
   .section__article {
-    // background-color: $color-white;
-    // font-family: $font-card;
+     background-color: $color-white;
+     font-family: $font-card;
     width: 240px;
     padding: 21px 0 12px 0;
   
     &--title {
       font-size: 18px;
       margin: 0 14px 4px 20px;
-    //   color: $color-primary-dark;
+       color: $color-primary-dark;
     }
   
     &--subtitle {
       font-size: 16px;
       font-weight: normal;
       margin: 0 0 10px 20px;
-    //   color: $color-cuaternary;
+       color: $color-cuaternary;
     }
   
     &--image {
@@ -72,7 +74,7 @@
     }
   
     &--wrapper {
-    //   border-left: 5px solid $color-primary;
+       border-left: 5px solid $color-primary;
     border-left: 5px;
     }
   }
@@ -84,7 +86,7 @@
   
     &--item {
       display: inline-block;
-    //   border: solid 2px $color-primary-light;
+       border: solid 2px $color-primary-light;
       border-radius: 16px;
       width: 32px;
       height: 32px;
