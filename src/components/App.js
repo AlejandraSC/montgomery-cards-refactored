@@ -2,14 +2,19 @@ import React from 'react';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
-// import './App.scss';
+
+//Create props to pass to Preview
+const props = {
+  name: 'MariCarmen',
+  job: 'Queen of React Kingdom'
+};
 
 class App extends React.Component {
   render() {
     return (
       <>
         <Header></Header>
-        <Main></Main>
+        <Main data={props}></Main>
         <Footer></Footer>
       </>
     );
