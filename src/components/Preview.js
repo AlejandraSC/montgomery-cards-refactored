@@ -46,7 +46,7 @@ class Preview extends React.Component {
                 <li className="icons__list--item js-item3">
                   <a
                     className="link js-cardGithub"
-                    href="https://"
+                    href={this.props.data.github}
                     target="_blank"
                   >
                     <i className="fa fa-github-alt" aria-hidden="true"></i>

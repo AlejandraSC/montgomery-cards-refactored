@@ -2,7 +2,24 @@ import React from 'react';
 import './Design.scss';
 
 class Design extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+
+  handleClick() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+
   render() {
+    const openClassName = this.state.isOpen ? '' : 'hidden';
+    const rotateArrow = this.state.isOpen ? 'rotate' : '';
+
     return (
       <fieldset className="fieldset form-design">
         <div className="section__design--collapsable uppercase">
@@ -13,11 +30,19 @@ class Design extends React.Component {
             ></i>
             Diseña
           </h3>
-          <a className="button--collapsable js-designCollapsable">
-            <i className="fa fa-chevron-down" aria-hidden="true"></i>
+          <a
+            className={`button--collapsable js-designCollapsable ${rotateArrow}`}
+          >
+            <i
+              className="fa fa-chevron-down"
+              aria-hidden="true"
+              onClick={this.handleClick}
+            ></i>
           </a>
         </div>
-        <div className="form--design-colors js-designContainer hidden">
+        <div
+          className={`form--design-colors js-designContainer ${openClassName}`}
+        >
           <h4 className="uppercase section__design--subtitle">Colores</h4>
           <div className="form--design-palets">
             <div className="palets--radio-1">

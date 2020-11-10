@@ -2,7 +2,22 @@ import React from 'react';
 import './CardsFill.scss';
 
 class CardsFill extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+
+  handleClick() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
   render() {
+    const openClassName = this.state.isOpen ? '' : 'hidden';
+    const rotateArrow = this.state.isOpen ? 'rotate' : '';
     return (
       <fieldset className="fieldset form--fill">
         <div className="section__fill--collapsable uppercase">
@@ -10,11 +25,17 @@ class CardsFill extends React.Component {
             <i className="fa fa-keyboard-o form--icons" aria-hidden="true"></i>
             Rellena
           </h3>
-          <a className="button--collapsable js-fillCollapsable">
-            <i className="fa fa-chevron-down" aria-hidden="true"></i>
+          <a
+            className={`button--collapsable js-fillCollapsable ${rotateArrow}`}
+          >
+            <i
+              className="fa fa-chevron-down"
+              aria-hidden="true"
+              onClick={this.handleClick}
+            ></i>
           </a>
         </div>
-        <div className="js-fillContainer aria-hidden hidden">
+        <div className={`js-fillContainer aria-hidden ${openClassName}`}>
           <div>
             <label className="element-form" for="name">
               Nombre completo
