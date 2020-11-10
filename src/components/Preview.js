@@ -21,7 +21,10 @@ class Preview extends React.Component {
                 {this.props.data.job}
               </h3>
             </div>
-            <div className="section__article--image js__profile-image"></div>
+            <div className="section__article--image js__profile-image">
+              {' '}
+              {this.props.data.profileImage}
+            </div>
             <nav className="section__article--icons">
               <ul className="icons__list">
                 <li className="icons__list--item js-item">
@@ -46,7 +49,7 @@ class Preview extends React.Component {
                 <li className="icons__list--item js-item3">
                   <a
                     className="link js-cardGithub"
-                    href={this.props.data.github}
+                    href="https://"
                     target="_blank"
                   >
                     <i className="fa fa-github-alt" aria-hidden="true"></i>

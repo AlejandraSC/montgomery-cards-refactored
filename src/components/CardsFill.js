@@ -124,6 +124,7 @@ class CardsFill extends React.Component {
                 id="github"
                 type="text"
                 placeholder="Ej: lisa-simpson"
+                href="https://"
                 name="github"
               />
             </label>
