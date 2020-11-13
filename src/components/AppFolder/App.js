@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './Header';
-import Main from './Main';
-import Footer from './Footer';
+import Header from '../HeaderFolder/Header';
+import Main from '../MainFolder/Main';
+import Footer from '../FooterFolder/Footer';
 
 //Create props to pass to Preview
 const fillProps = {

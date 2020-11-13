@@ -1,4 +1,4 @@
-@import "./reset.scss";
+@import ".././reset.scss";
 
 .section__card {
   background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
@@ -70,7 +70,7 @@
     background-size: cover;
     border: 1px solid #ccc;
     width: 100%;
-    background-image: url('../images/lisa_simpson.png');
+    //background-image: url('./../images/lisa_simpson.png');
   }
   
   &--wrapper {
