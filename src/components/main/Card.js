@@ -1,8 +1,8 @@
 import React from 'react';
 import './Main.scss';
-import CardsFill from './CardsFill';
-import Design from './Design';
-import Share from './Share';
+import CardsFill from './card/CardsFill';
+import Design from './card/Design';
+import Share from './card/Share';
 
 class Card extends React.Component {
   render() {
