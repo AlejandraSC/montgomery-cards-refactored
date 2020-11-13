@@ -25,9 +25,7 @@ class CardsFill extends React.Component {
             <i className="fa fa-keyboard-o form--icons" aria-hidden="true"></i>
             Rellena
           </h3>
-          <a
-            className={`button--collapsable js-fillCollapsable ${rotateArrow}`}
-          >
+          <a className={`button--collapsable ${rotateArrow}`}>
             <i
               className="fa fa-chevron-down"
               aria-hidden="true"
@@ -35,12 +33,12 @@ class CardsFill extends React.Component {
             ></i>
           </a>
         </div>
-        <div className={`js-fillContainer aria-hidden ${openClassName}`}>
+        <div className={` aria-hidden ${openClassName}`}>
           <div>
-            <label className="element-form" for="name">
+            <label className="element-form" htmlFor="name">
               Nombre completo
               <input
-                className="element-form form-input js-inputName js-input"
+                className="element-form form-input"
                 id="name"
                 type="text"
                 placeholder="Ej: Lisa Simpson"
@@ -49,10 +47,10 @@ class CardsFill extends React.Component {
             </label>
           </div>
           <div>
-            <label className="element-form" for="position">
+            <label className="element-form" htmlFor="position">
               Puesto
               <input
-                className="element-form form-input js-inputPosition js-input"
+                className="element-form form-input"
                 id="job"
                 type="text"
                 placeholder="Ej: Saxophonist "
@@ -61,30 +59,27 @@ class CardsFill extends React.Component {
             </label>
           </div>
           <div>
-            <label className="element-form" for="image">
+            <label className="element-form" htmlFor="image">
               Imagen de perfil
               <input
-                className="element-form form-input form-file js__profile-upload-btn js-input"
+                className="element-form form-input form-file"
                 id="photo"
                 type="file"
                 name="photo"
               />
             </label>
             <div className="button--wrapper">
-              <button
-                type="button"
-                className="button--file js__profile-trigger"
-              >
+              <button type="button" className="button--file">
                 Añadir imagen
               </button>
-              <div className="js__profile-preview image--profile-preview"></div>
+              <div className=" image--profile-preview"></div>
             </div>
           </div>
           <div>
-            <label className="element-form" for="email">
+            <label className="element-form" htmlFor="email">
               Email
               <input
-                className="element-form form-input js-inputEmail js-input"
+                className="element-form form-input"
                 id="email"
                 type="email"
                 placeholder="Ej: lisa-simpson@gmail.com"
@@ -93,10 +88,10 @@ class CardsFill extends React.Component {
             </label>
           </div>
           <div>
-            <label className="element-form" for="phone">
+            <label className="element-form" htmlFor="phone">
               Teléfono
               <input
-                className="element-form form-input js-inputPhone js-input"
+                className="element-form form-input"
                 id="phone"
                 type="tel"
                 placeholder="Ej: 555-55-55-55"
@@ -105,10 +100,10 @@ class CardsFill extends React.Component {
             </label>
           </div>
           <div>
-            <label className="element-form" for="linkedin">
+            <label className="element-form" htmlFor="linkedin">
               Linkedin
               <input
-                className="element-form form-input js-inputLinkedin js-input"
+                className="element-form form-input"
                 id="linkedin"
                 type="text"
                 placeholder="Ej: lisa.simpson"
@@ -117,10 +112,10 @@ class CardsFill extends React.Component {
             </label>
           </div>
           <div>
-            <label className="element-form" for="github">
+            <label className="element-form" htmlFor="github">
               Github
               <input
-                className="input-github element-form form-input js-inputGithub js-input"
+                className="element-form form-input"
                 id="github"
                 type="text"
                 placeholder="Ej: lisa-simpson"

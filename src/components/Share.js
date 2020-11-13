@@ -18,15 +18,13 @@ class Share extends React.Component {
     const openClassName = this.state.isOpen ? '' : 'hidden';
     const rotateArrow = this.state.isOpen ? 'rotate' : '';
     return (
-      <fieldset className="fieldset section__share js-section__share">
+      <fieldset className="fieldset section__share">
         <div className="section__share--collapsable uppercase">
           <h3 className="section__share--title bold">
             <i className="fa fa-share-alt form--icons" aria-hidden="true"></i>
             Comparte
           </h3>
-          <a
-            className={`button--collapsable js-shareCollapsable ${rotateArrow}`}
-          >
+          <a className={`button--collapsable ${rotateArrow}`}>
             <i
               className="fa fa-chevron-down"
               aria-hidden="true"
@@ -34,17 +32,14 @@ class Share extends React.Component {
             ></i>
           </a>
         </div>
-        <section className={`section__link js-shareContainer ${openClassName}`}>
-          <article className="section__link--share js-section__link--share hidden--border">
-            <button
-              type="button"
-              className="button--create js-button--create uppercase"
-            >
+        <section className={`section__link ${openClassName}`}>
+          <article className="section__link--share hidden--border">
+            <button type="button" className="button--create uppercase">
               <i className="fa fa-id-card" aria-hidden="true"></i>
               Crear tarjeta
             </button>
           </article>
-          <article className="section__link--twitter js-twitterContainer hidden">
+          <article className="section__link--twitter hidden">
             <h3 className="section__share--subtitle">
               La tarjeta ha sido creada
             </h3>

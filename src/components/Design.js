@@ -30,9 +30,7 @@ class Design extends React.Component {
             ></i>
             Diseña
           </h3>
-          <a
-            className={`button--collapsable js-designCollapsable ${rotateArrow}`}
-          >
+          <a className={`button--collapsable ${rotateArrow}`}>
             <i
               className="fa fa-chevron-down"
               aria-hidden="true"
@@ -40,15 +38,13 @@ class Design extends React.Component {
             ></i>
           </a>
         </div>
-        <div
-          className={`form--design-colors js-designContainer ${openClassName}`}
-        >
+        <div className={`form--design-color ${openClassName}`}>
           <h4 className="uppercase section__design--subtitle">Colores</h4>
           <div className="form--design-palets">
             <div className="palets--radio-1">
-              <label for="design-1">
+              <label htmlFor="design-1">
                 <input
-                  className="js-design-1"
+                  className="design-1"
                   id="design-1"
                   type="radio"
                   value="design-1"
@@ -58,9 +54,9 @@ class Design extends React.Component {
               </label>
             </div>
             <div className="palets--radio-2">
-              <label for="design-2">
+              <label htmlFor="design-2">
                 <input
-                  className="js-design-2"
+                  className="design-2"
                   id="design-2"
                   type="radio"
                   value="design-2"
@@ -69,9 +65,9 @@ class Design extends React.Component {
               </label>
             </div>
             <div className="palets--radio-3">
-              <label for="design-3">
+              <label htmlFor="design-3">
                 <input
-                  className="js-design-3"
+                  className="design-3"
                   id="design-3"
                   type="radio"
                   value="design-3"
