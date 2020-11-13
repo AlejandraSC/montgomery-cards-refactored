@@ -1,5 +1,6 @@
 import React from 'react';
 import './CardsFill.scss';
+import CardsFillInputs from './CardsFillInputs';
 
 class CardsFill extends React.Component {
   render() {
@@ -15,98 +16,63 @@ class CardsFill extends React.Component {
           </a>
         </div>
         <div className="js-fillContainer aria-hidden hidden">
-          <div>
-            <label className="element-form" for="name">
-              Nombre completo
-              <input
-                className="element-form form-input js-inputName js-input"
-                id="name"
-                type="text"
-                placeholder="Ej: Lisa Simpson"
-                name="name"
-              />
-            </label>
-          </div>
-          <div>
-            <label className="element-form" for="position">
-              Puesto
-              <input
-                className="element-form form-input js-inputPosition js-input"
-                id="job"
-                type="text"
-                placeholder="Ej: Saxophonist "
-                name="job"
-              />
-            </label>
-          </div>
-          <div>
-            <label className="element-form" for="image">
-              Imagen de perfil
-              <input
-                className="element-form form-input form-file js__profile-upload-btn js-input"
-                id="photo"
-                type="file"
-                name="photo"
-              />
-            </label>
-            <div className="button--wrapper">
-              <button
-                type="button"
-                className="button--file js__profile-trigger"
-              >
-                Añadir imagen
-              </button>
-              <div className="js__profile-preview image--profile-preview"></div>
-            </div>
-          </div>
-          <div>
-            <label className="element-form" for="email">
-              Email
-              <input
-                className="element-form form-input js-inputEmail js-input"
-                id="email"
-                type="email"
-                placeholder="Ej: lisa-simpson@gmail.com"
-                name="email"
-              />
-            </label>
-          </div>
-          <div>
-            <label className="element-form" for="phone">
-              Teléfono
-              <input
-                className="element-form form-input js-inputPhone js-input"
-                id="phone"
-                type="tel"
-                placeholder="Ej: 555-55-55-55"
-                name="phone"
-              />
-            </label>
-          </div>
-          <div>
-            <label className="element-form" for="linkedin">
-              Linkedin
-              <input
-                className="element-form form-input js-inputLinkedin js-input"
-                id="linkedin"
-                type="text"
-                placeholder="Ej: lisa.simpson"
-                name="linkedin"
-              />
-            </label>
-          </div>
-          <div>
-            <label className="element-form" for="github">
-              Github
-              <input
-                className="input-github element-form form-input js-inputGithub js-input"
-                id="github"
-                type="text"
-                placeholder="Ej: lisa-simpson"
-                name="github"
-              />
-            </label>
-          </div>
+          <CardsFillInputs
+            name={'name'}
+            id={'name'}
+            type={'text'}
+            value={''}
+            title={'Nombre completo'}
+            placeholder={'Ej: Lisa Simpson'}
+          />
+          <CardsFillInputs
+            name={'job'}
+            id={'job'}
+            type={'text'}
+            value={''}
+            title={'Puesto'}
+            placeholder={'Ej: Saxophonist '}
+            position={'position'}
+          />
+          <CardsFillInputs
+            name={'photo'}
+            id={'photo'}
+            type={'file'}
+            // value={''}
+            title={'Imagen de perfil'}
+            // placeholder={'Ej: Saxophonist '}
+          />
+          <CardsFillInputs
+            name={'email'}
+            id={'email'}
+            type={'email'}
+            value={''}
+            title={'Email'}
+            placeholder={'Ej: lisa-simpson@gmail.com'}
+          />
+          <CardsFillInputs
+            name={'phone'}
+            id={'phone'}
+            type={'tel'}
+            value={''}
+            title={'Teléfono'}
+            placeholder={'Ej: 555-55-55-55'}
+          />
+          <CardsFillInputs
+            name={'linkedin'}
+            id={'linkedin'}
+            type={'text'}
+            value={''}
+            title={'Linkedin'}
+            placeholder={'Ej: lisa.simpson'}
+          />
+          <CardsFillInputs
+            name={'github'}
+            id={'github'}
+            type={'text'}
+            value={''}
+            title={'Github'}
+            placeholder={'Ej: lisa-simpson'}
+          />
         </div>
       </fieldset>
     );
