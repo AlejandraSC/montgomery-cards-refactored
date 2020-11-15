@@ -1,14 +1,12 @@
 import React from 'react';
-import whiteDesign from '../images/white_design.png';
+import whiteDesign from '../.././images/white_design.png';
 import './Header.scss';
 
 class Header extends React.Component {
   render() {
     return (
       <header className="header">
-        <a>
-          <img className="header--logo" src={whiteDesign} />
-        </a>
+        {<a>{<img className="header--logo" src={whiteDesign} />}</a>}
       </header>
     );
   }

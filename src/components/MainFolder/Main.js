@@ -1,7 +1,7 @@
 import React from 'react';
 import './Main.scss';
 import Preview from './PreviewFolder/Preview';
-import Card from '../Card';
+import Card from './CardFolder/Card';
 
 class Main extends React.Component {
   render() {

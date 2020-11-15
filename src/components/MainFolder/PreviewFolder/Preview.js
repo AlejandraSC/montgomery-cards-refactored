@@ -19,7 +19,6 @@ class Preview extends React.Component {
               </h3>
             </div>
             <div className="section__article--image ">
-              {' '}
               {this.props.data.profileImage}
             </div>
             <nav className="section__article--icons">
