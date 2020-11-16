@@ -15,13 +15,16 @@ class Preview extends React.Component {
           <article className="section__article">
             <div className="section__article--wrapper">
               <h2 className="section__article--title js-cardName">
-                Lisa Simpson
+                {this.props.data.name}
               </h2>
               <h3 className="section__article--subtitle js-cardPosition">
-                Saxophonist
+                {this.props.data.job}
               </h3>
             </div>
-            <div className="section__article--image js__profile-image"></div>
+            <div className="section__article--image js__profile-image">
+              {' '}
+              {this.props.data.profileImage}
+            </div>
             <nav className="section__article--icons">
               <ul className="icons__list">
                 <li className="icons__list--item js-item">
