@@ -18,6 +18,7 @@ class App extends React.Component {
       github: ''
     };
     this.handleChange = this.handleChange.bind(this);
+    this.handleReset = this.handleReset.bind(this);
   }
 
   handleChange(inputValue, inputValueId) {
@@ -26,11 +27,22 @@ class App extends React.Component {
     });
   }
 
+  handleReset(inputValue, inputValueId) {
+    this.setState({
+      [inputValueId]: '',
+      [inputValue]: ''
+    });
+  }
+
   render() {
     return (
       <>
         <Header></Header>
-        <Main data={this.state} handleChange={this.handleChange}></Main>
+        <Main
+          data={this.state}
+          handleChange={this.handleChange}
+          handleReset={this.handleReset}
+        ></Main>
         <Footer></Footer>
       </>
     );

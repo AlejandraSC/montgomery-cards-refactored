@@ -7,7 +7,10 @@ class Main extends React.Component {
   render() {
     return (
       <main className="main__cards">
-        <Preview data={this.props.data}></Preview>
+        <Preview
+          data={this.props.data}
+          handleReset={this.props.handleReset}
+        ></Preview>
         <Card handleChange={this.props.handleChange}></Card>
       </main>
     );

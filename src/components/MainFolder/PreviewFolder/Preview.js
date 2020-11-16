@@ -2,11 +2,24 @@ import React from 'react';
 import './Preview.scss';
 
 class Preview extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleReset = this.handleReset.bind(this);
+  }
+  handleReset(ev) {
+    const inputValue = ev.target.value;
+    const inputValueId = ev.target.id;
+    this.props.handleReset(inputValue, inputValueId);
+  }
   render() {
     return (
       <section className="section__card">
         <div className="section__card--wrapper">
-          <button type="button" className="uppercase button--reset">
+          <button
+            type="button"
+            className="uppercase button--reset"
+            onClick={this.handleReset}
+          >
             <i className="fa fa-trash" aria-hidden="true"></i>Reset
           </button>
           <article className="section__article">
