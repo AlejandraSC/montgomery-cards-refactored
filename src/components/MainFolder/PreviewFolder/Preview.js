@@ -12,10 +12,10 @@ class Preview extends React.Component {
           <article className="section__article">
             <div className="section__article--wrapper">
               <h2 className="section__article--title">
-                {this.props.data.name}
+                {this.props.data.name || 'Lisa Simpson'}
               </h2>
               <h3 className="section__article--subtitle ">
-                {this.props.data.job}
+                {this.props.data.job || 'Front End Developer'}
               </h3>
             </div>
             <div className="section__article--image ">
@@ -24,22 +24,30 @@ class Preview extends React.Component {
             <nav className="section__article--icons">
               <ul className="icons__list">
                 <li className="icons__list--item">
-                  <a className="link " href="tel:">
+                  <a className="link " href={`tel:${this.props.data.phone}`}>
                     <i className="fa fa-mobile" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li className="icons__list--item ">
-                  <a className="link " href="mailto:">
+                  <a className="link " href={`mailto:${this.props.data.email}`}>
                     <i className="fa fa-envelope-o" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li className="icons__list--item ">
-                  <a className="link " href="https://" target="_blank">
+                  <a
+                    className="link "
+                    href={`https://www.linkedin.com/in/${this.props.data.linkedin}`}
+                    target="_blank"
+                  >
                     <i className="fa fa-linkedin" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li className="icons__list--item ">
-                  <a className="link" href="https://" target="_blank">
+                  <a
+                    className="link"
+                    href={`https://www.github.com/${this.props.data.github}`}
+                    target="_blank"
+                  >
                     <i className="fa fa-github-alt" aria-hidden="true"></i>
                   </a>
                 </li>

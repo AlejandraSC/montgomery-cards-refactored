@@ -5,6 +5,7 @@ class CardsFill extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.handleInputChange = this.handleInputChange.bind(this);
     this.state = {
       isOpen: false
     };
@@ -14,6 +15,12 @@ class CardsFill extends React.Component {
     this.setState({
       isOpen: !this.state.isOpen
     });
+  }
+
+  handleInputChange(ev) {
+    const inputValue = ev.target.value;
+    const inputValueId = ev.target.id;
+    this.props.handleChange(inputValue, inputValueId);
   }
   render() {
     const openClassName = this.state.isOpen ? '' : 'hidden';
@@ -43,6 +50,7 @@ class CardsFill extends React.Component {
                 type="text"
                 placeholder="Ej: Lisa Simpson"
                 name="name"
+                onChange={this.handleInputChange}
               />
             </label>
           </div>
@@ -55,6 +63,7 @@ class CardsFill extends React.Component {
                 type="text"
                 placeholder="Ej: Saxophonist "
                 name="job"
+                onChange={this.handleInputChange}
               />
             </label>
           </div>
@@ -66,6 +75,7 @@ class CardsFill extends React.Component {
                 id="photo"
                 type="file"
                 name="photo"
+                onChange={this.handleInputChange}
               />
             </label>
             <div className="button--wrapper">
@@ -84,6 +94,7 @@ class CardsFill extends React.Component {
                 type="email"
                 placeholder="Ej: lisa-simpson@gmail.com"
                 name="email"
+                onChange={this.handleInputChange}
               />
             </label>
           </div>
@@ -96,6 +107,7 @@ class CardsFill extends React.Component {
                 type="tel"
                 placeholder="Ej: 555-55-55-55"
                 name="phone"
+                onChange={this.handleInputChange}
               />
             </label>
           </div>
@@ -108,6 +120,7 @@ class CardsFill extends React.Component {
                 type="text"
                 placeholder="Ej: lisa.simpson"
                 name="linkedin"
+                onChange={this.handleInputChange}
               />
             </label>
           </div>
@@ -121,6 +134,7 @@ class CardsFill extends React.Component {
                 placeholder="Ej: lisa-simpson"
                 href="https://"
                 name="github"
+                onChange={this.handleInputChange}
               />
             </label>
           </div>
