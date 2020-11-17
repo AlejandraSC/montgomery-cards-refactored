@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './GetAvatar.scss';
 import PropTypes from 'prop-types';
+import '../AppFolder/CardsFolder/CardsFill.scss';
 
 class GetAvatar extends Component {
   constructor(props) {
@@ -27,7 +28,8 @@ class GetAvatar extends Component {
   getImage() {
     const image = this.fr.result;
     this.props.updateAvatar('profileImage', image);
-    this.props.handleChange();
+
+    /*this.props.handleChange();*/
   }
 
   getPreview(isDefault, image) {
@@ -37,26 +39,28 @@ class GetAvatar extends Component {
   render() {
     const { isAvatarDefault, avatar } = this.props;
     return (
-      <div className="get-avatar">
-        <button
-          className="get-avatar__trigger"
-          type="button"
-          onClick={this.handleFilePicker}
-        >
-          Get IMAGE!
-        </button>
-
+      <div>
+        <label className="element-form">Imagen de perfil</label>
         <input
           type="file"
           ref={this.myFileField}
-          className="get-avatar__upload-field"
+          className="element-form form-input form-file"
           onChange={this.uploadImage}
         />
+        <div className="button--wrapper">
+          <button
+            className="button--file"
+            type="button"
+            onClick={this.handleFilePicker}
+          >
+            Añadir Imagen
+          </button>
 
-        <div
-          className="get-avatar__preview"
-          style={this.getPreview(isAvatarDefault, avatar)}
-        ></div>
+          <div
+            className="image--profile-preview"
+            style={this.getPreview(isAvatarDefault, avatar)}
+          ></div>
+        </div>
       </div>
     );
   }

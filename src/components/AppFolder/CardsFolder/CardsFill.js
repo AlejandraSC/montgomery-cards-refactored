@@ -70,16 +70,8 @@ class CardsFill extends React.Component {
               />
             </label>
           </div>
-          <GetAvatar
-            updateAvatar={
-              this.props.handleChange
-            } /* "Funcin de Lifting que viene de App" */
-            isAvatarDefault=""
-            avatar={
-              this.props.data.profileImage
-            } /* "El valor de del avatar que App guarda en el state" */
-          ></GetAvatar>
-          <div>
+
+          {/* <div>
             <label className="element-form" htmlFor="image">
               Imagen de perfil
               <input
@@ -96,8 +88,17 @@ class CardsFill extends React.Component {
                 Añadir imagen
               </button>
               <div className=" image--profile-preview"></div>
-            </div>
-          </div>
+            </div> */}
+          <GetAvatar
+            updateAvatar={
+              this.props.handleChange
+            } /* "Funcin de Lifting que viene de App" */
+            isAvatarDefault=""
+            avatar={
+              this.props.data.profileImage
+            } /* "El valor de del avatar que App guarda en el state" */
+          ></GetAvatar>
+
           <div>
             <label className="element-form" htmlFor="email">
               Email
