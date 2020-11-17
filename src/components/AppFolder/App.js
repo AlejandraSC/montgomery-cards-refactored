@@ -27,10 +27,15 @@ class App extends React.Component {
     });
   }
 
-  handleReset(inputValue, inputValueId) {
+  handleReset() {
     this.setState({
-      [inputValueId]: '',
-      [inputValue]: ''
+      name: '',
+      job: '',
+      profileImage: '',
+      email: '',
+      phone: '',
+      linkedin: '',
+      github: ''
     });
   }
 

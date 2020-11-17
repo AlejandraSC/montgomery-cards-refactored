@@ -11,7 +11,10 @@ class Main extends React.Component {
           data={this.props.data}
           handleReset={this.props.handleReset}
         ></Preview>
-        <Card handleChange={this.props.handleChange}></Card>
+        <Card
+          handleChange={this.props.handleChange}
+          data={this.props.data}
+        ></Card>
       </main>
     );
   }

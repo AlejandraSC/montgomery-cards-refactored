@@ -6,10 +6,8 @@ class Preview extends React.Component {
     super(props);
     this.handleReset = this.handleReset.bind(this);
   }
-  handleReset(ev) {
-    const inputValue = ev.target.value;
-    const inputValueId = ev.target.id;
-    this.props.handleReset(inputValue, inputValueId);
+  handleReset() {
+    this.props.handleReset();
   }
   render() {
     return (
@@ -32,7 +30,7 @@ class Preview extends React.Component {
               </h3>
             </div>
             <div className="section__article--image ">
-              {this.props.data.profileImage}
+              <img style={{ backgroundImage: this.props.data.profileImage }} />
             </div>
             <nav className="section__article--icons">
               <ul className="icons__list">

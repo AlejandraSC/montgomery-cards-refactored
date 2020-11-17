@@ -1,4 +1,5 @@
 import React from 'react';
+import GetAvatar from '../../MainFolder/GetAvatar';
 import './CardsFill.scss';
 
 class CardsFill extends React.Component {
@@ -51,6 +52,7 @@ class CardsFill extends React.Component {
                 placeholder="Ej: Lisa Simpson"
                 name="name"
                 onChange={this.handleInputChange}
+                value={this.props.data.name}
               />
             </label>
           </div>
@@ -64,9 +66,19 @@ class CardsFill extends React.Component {
                 placeholder="Ej: Saxophonist "
                 name="job"
                 onChange={this.handleInputChange}
+                value={this.props.data.job}
               />
             </label>
           </div>
+          <GetAvatar
+            updateAvatar={
+              this.props.handleChange
+            } /* "Funcin de Lifting que viene de App" */
+            isAvatarDefault=""
+            avatar={
+              this.props.data.profileImage
+            } /* "El valor de del avatar que App guarda en el state" */
+          ></GetAvatar>
           <div>
             <label className="element-form" htmlFor="image">
               Imagen de perfil
@@ -76,6 +88,7 @@ class CardsFill extends React.Component {
                 type="file"
                 name="photo"
                 onChange={this.handleInputChange}
+                value={this.props.data.profileImage}
               />
             </label>
             <div className="button--wrapper">
@@ -95,6 +108,7 @@ class CardsFill extends React.Component {
                 placeholder="Ej: lisa-simpson@gmail.com"
                 name="email"
                 onChange={this.handleInputChange}
+                value={this.props.data.email}
               />
             </label>
           </div>
@@ -108,6 +122,7 @@ class CardsFill extends React.Component {
                 placeholder="Ej: 555-55-55-55"
                 name="phone"
                 onChange={this.handleInputChange}
+                value={this.props.data.phone}
               />
             </label>
           </div>
@@ -121,6 +136,7 @@ class CardsFill extends React.Component {
                 placeholder="Ej: lisa.simpson"
                 name="linkedin"
                 onChange={this.handleInputChange}
+                value={this.props.data.linkedin}
               />
             </label>
           </div>
@@ -135,6 +151,7 @@ class CardsFill extends React.Component {
                 href="https://"
                 name="github"
                 onChange={this.handleInputChange}
+                value={this.props.data.github}
               />
             </label>
           </div>

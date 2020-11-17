@@ -9,7 +9,10 @@ class Card extends React.Component {
     return (
       <form className="form">
         <Design></Design>
-        <CardsFill handleChange={this.props.handleChange}></CardsFill>
+        <CardsFill
+          handleChange={this.props.handleChange}
+          data={this.props.data}
+        ></CardsFill>
         <Share></Share>
       </form>
     );
