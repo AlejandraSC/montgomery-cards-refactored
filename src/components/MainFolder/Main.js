@@ -14,6 +14,7 @@ class Main extends React.Component {
         ></Preview>
         <Card
           handleChange={this.props.handleChange}
+          handleChangeRadio={this.props.handleChangeRadio}
           data={this.props.data}
         ></Card>
       </main>

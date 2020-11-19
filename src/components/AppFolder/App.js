@@ -15,10 +15,12 @@ class App extends React.Component {
       email: '',
       phone: '',
       linkedin: '',
-      github: ''
+      github: '',
+      design: 'design-1'
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleReset = this.handleReset.bind(this);
+    this.handleChangeRadio = this.handleChangeRadio.bind(this);
   }
 
   handleChange(inputValue, inputValueId) {
@@ -39,6 +41,12 @@ class App extends React.Component {
     });
   }
 
+  handleChangeRadio(name, changeValue) {
+    this.setState({
+      [name]: changeValue
+    });
+  }
+
   render() {
     return (
       <>
@@ -47,6 +55,7 @@ class App extends React.Component {
           data={this.state}
           handleChange={this.handleChange}
           handleReset={this.handleReset}
+          handleChangeRadio={this.handleChangeRadio}
         ></Main>
         <Footer></Footer>
       </>
