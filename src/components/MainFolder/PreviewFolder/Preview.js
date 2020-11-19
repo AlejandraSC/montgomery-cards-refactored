@@ -1,5 +1,6 @@
 import React from 'react';
 import './Preview.scss';
+import lisa from '../../../images/lisa_simpson.png';
 
 class Preview extends React.Component {
   constructor(props) {
@@ -29,9 +30,12 @@ class Preview extends React.Component {
                 {this.props.data.job || 'Front End Developer'}
               </h3>
             </div>
-            <div className="section__article--image ">
-              <img style={{ backgroundImage: this.props.data.profileImage }} />
-            </div>
+            <div
+              className="section__article--image"
+              style={{
+                backgroundImage: `url(${this.props.data.profileImage || lisa})`
+              }}
+            ></div>
             <nav className="section__article--icons">
               <ul className="icons__list">
                 <li className="icons__list--item">

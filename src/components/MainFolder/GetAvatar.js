@@ -27,7 +27,7 @@ class GetAvatar extends Component {
 
   getImage() {
     const image = this.fr.result;
-    this.props.updateAvatar('profileImage', image);
+    this.props.updateAvatar(image, 'profileImage');
 
     /*this.props.handleChange();*/
   }
