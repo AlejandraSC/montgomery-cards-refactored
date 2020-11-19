@@ -10,9 +10,11 @@ class Main extends React.Component {
         <Preview
           data={this.props.data}
           handleReset={this.props.handleReset}
+          handleChange={this.props.handleChange}
         ></Preview>
         <Card
           handleChange={this.props.handleChange}
+          handleChangeRadio={this.props.handleChangeRadio}
           data={this.props.data}
         ></Card>
       </main>

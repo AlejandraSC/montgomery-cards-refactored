@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import Header from '../HeaderFolder/Header';
 import Main from '../MainFolder/Main';
@@ -55,3 +56,71 @@ class App extends React.Component {
 }
 
 export default App;
+=======
+import React from 'react';
+import Header from '../HeaderFolder/Header';
+import Main from '../MainFolder/Main';
+import Footer from '../FooterFolder/Footer';
+
+//Create props to pass to Preview
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      job: '',
+      profileImage: '',
+      email: '',
+      phone: '',
+      linkedin: '',
+      github: '',
+      design: 'design-1'
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleReset = this.handleReset.bind(this);
+    this.handleChangeRadio = this.handleChangeRadio.bind(this);
+  }
+
+  handleChange(inputValue, inputValueId) {
+    this.setState({
+      [inputValueId]: inputValue
+    });
+  }
+
+  handleReset() {
+    this.setState({
+      name: '',
+      job: '',
+      profileImage: '',
+      email: '',
+      phone: '',
+      linkedin: '',
+      github: ''
+    });
+  }
+
+  handleChangeRadio(name, changeValue) {
+    this.setState({
+      [name]: changeValue
+    });
+  }
+
+  render() {
+    return (
+      <>
+        <Header></Header>
+        <Main
+          data={this.state}
+          handleChange={this.handleChange}
+          handleReset={this.handleReset}
+          handleChangeRadio={this.handleChangeRadio}
+        ></Main>
+        <Footer></Footer>
+      </>
+    );
+  }
+}
+
+export default App;
+>>>>>>> d4946cc37b7f8bee6a311f8de4f09483f0d63cbc

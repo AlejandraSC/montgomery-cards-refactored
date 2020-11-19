@@ -5,6 +5,7 @@ class Design extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.handleRadioChange = this.handleRadioChange.bind(this);
     this.state = {
       isOpen: false
     };
@@ -14,6 +15,13 @@ class Design extends React.Component {
     this.setState({
       isOpen: !this.state.isOpen
     });
+  }
+
+  handleRadioChange(event) {
+    const changeValue = event.target.value;
+    const name = event.target.name;
+    console.log(name);
+    this.props.handleChangeRadio(name, changeValue);
   }
 
   render() {
@@ -49,7 +57,7 @@ class Design extends React.Component {
                   type="radio"
                   value="design-1"
                   name="design"
-                  checked
+                  onChange={this.handleRadioChange}
                 />
               </label>
             </div>
@@ -61,6 +69,7 @@ class Design extends React.Component {
                   type="radio"
                   value="design-2"
                   name="design"
+                  onChange={this.handleRadioChange}
                 />
               </label>
             </div>
@@ -72,6 +81,7 @@ class Design extends React.Component {
                   type="radio"
                   value="design-3"
                   name="design"
+                  onChange={this.handleRadioChange}
                 />
               </label>
             </div>
