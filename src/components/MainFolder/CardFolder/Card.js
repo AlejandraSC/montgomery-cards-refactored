@@ -7,9 +7,13 @@ import Share from '../././../AppFolder/ShareFolder/Share';
 class Card extends React.Component {
   render() {
     return (
-      <form class="form">
+      <form className="form">
         <Design></Design>
-        <CardsFill></CardsFill>
+        <CardsFill
+          handleChange={this.props.handleChange}
+          handleChangeRadio={this.props.handleChangeRadio}
+          data={this.props.data}
+        ></CardsFill>
         <Share></Share>
       </form>
     );
