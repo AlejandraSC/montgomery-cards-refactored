@@ -1,4 +1,5 @@
-@import "./reset.scss";
+
+@import "../../../components/reset.scss";
 
 .section__card {
   background: linear-gradient(to bottom, #bfcdd0, #dde9ed);
@@ -70,7 +71,8 @@
     background-size: cover;
     border: 1px solid #ccc;
     width: 100%;
-    background-image: url('../images/lisa_simpson.png');
+    background-image: url('../../.././images/lisa_simpson.png');
+   
   }
   
   &--wrapper {
@@ -94,5 +96,15 @@
     text-align: center;
     padding-top: 3px;
   }
+}
+
+.newImage {
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #ccc;
+  width: 100%;
 }
   

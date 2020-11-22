@@ -5,6 +5,7 @@ class Design extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.handleChangeRadio = this.handleChangeRadio.bind(this);
     this.state = {
       isOpen: false
     };
@@ -14,6 +15,12 @@ class Design extends React.Component {
     this.setState({
       isOpen: !this.state.isOpen
     });
+  }
+
+  handleChangeRadio(event) {
+    const changeValue = event.target.value;
+    // const name = event.target.name;
+    this.props.handleChangeRadio(changeValue);
   }
 
   render() {
@@ -30,9 +37,7 @@ class Design extends React.Component {
             ></i>
             Diseña
           </h3>
-          <a
-            className={`button--collapsable js-designCollapsable ${rotateArrow}`}
-          >
+          <a className={`button--collapsable ${rotateArrow}`}>
             <i
               className="fa fa-chevron-down"
               aria-hidden="true"
@@ -40,42 +45,51 @@ class Design extends React.Component {
             ></i>
           </a>
         </div>
-        <div
-          className={`form--design-colors js-designContainer ${openClassName}`}
-        >
+        <div className={`form--design-color ${openClassName}`}>
           <h4 className="uppercase section__design--subtitle">Colores</h4>
           <div className="form--design-palets">
             <div className="palets--radio-1">
-              <label for="design-1">
+              <label htmlFor="design-1">
                 <input
-                  className="js-design-1"
+                  className="design-1"
                   id="design-1"
                   type="radio"
-                  value="design-1"
+                  value="1"
                   name="design"
-                  checked
+                  onChange={this.handleChangeRadio}
+                  checkedStatus={
+                    this.props.data.design === 'design-1' ? true : false
+                  }
                 />
               </label>
             </div>
             <div className="palets--radio-2">
-              <label for="design-2">
+              <label htmlFor="design-2">
                 <input
-                  className="js-design-2"
+                  className="design-2"
                   id="design-2"
                   type="radio"
-                  value="design-2"
+                  value="2"
                   name="design"
+                  onChange={this.handleChangeRadio}
+                  checkedStatus={
+                    this.props.data.design === 'design-2' ? true : false
+                  }
                 />
               </label>
             </div>
             <div className="palets--radio-3">
-              <label for="design-3">
+              <label htmlFor="design-3">
                 <input
-                  className="js-design-3"
+                  className="design-3"
                   id="design-3"
                   type="radio"
-                  value="design-3"
+                  value="3"
                   name="design"
+                  onChange={this.handleChangeRadio}
+                  checkedStatus={
+                    this.props.data.design === 'design-3' ? true : false
+                  }
                 />
               </label>
             </div>
