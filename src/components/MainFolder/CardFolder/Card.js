@@ -8,7 +8,10 @@ class Card extends React.Component {
   render() {
     return (
       <form className="form">
-        <Design></Design>
+        <Design
+          data={this.props.data}
+          handleChangeRadio={this.props.handleChangeRadio}
+        ></Design>
         <CardsFill
           handleChange={this.props.handleChange}
           handleChangeRadio={this.props.handleChangeRadio}

@@ -5,7 +5,7 @@ class Design extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
-    this.handleRadioChange = this.handleRadioChange.bind(this);
+    this.handleChangeRadio = this.handleChangeRadio.bind(this);
     this.state = {
       isOpen: false
     };
@@ -17,11 +17,10 @@ class Design extends React.Component {
     });
   }
 
-  handleRadioChange(event) {
+  handleChangeRadio(event) {
     const changeValue = event.target.value;
-    const name = event.target.name;
-    console.log(name);
-    this.props.handleChangeRadio(name, changeValue);
+    // const name = event.target.name;
+    this.props.handleChangeRadio(changeValue);
   }
 
   render() {
@@ -55,9 +54,12 @@ class Design extends React.Component {
                   className="design-1"
                   id="design-1"
                   type="radio"
-                  value="design-1"
+                  value="1"
                   name="design"
-                  onChange={this.handleRadioChange}
+                  onChange={this.handleChangeRadio}
+                  checkedStatus={
+                    this.props.data.design === 'design-1' ? true : false
+                  }
                 />
               </label>
             </div>
@@ -67,9 +69,12 @@ class Design extends React.Component {
                   className="design-2"
                   id="design-2"
                   type="radio"
-                  value="design-2"
+                  value="2"
                   name="design"
-                  onChange={this.handleRadioChange}
+                  onChange={this.handleChangeRadio}
+                  checkedStatus={
+                    this.props.data.design === 'design-2' ? true : false
+                  }
                 />
               </label>
             </div>
@@ -79,9 +84,12 @@ class Design extends React.Component {
                   className="design-3"
                   id="design-3"
                   type="radio"
-                  value="design-3"
+                  value="3"
                   name="design"
-                  onChange={this.handleRadioChange}
+                  onChange={this.handleChangeRadio}
+                  checkedStatus={
+                    this.props.data.design === 'design-3' ? true : false
+                  }
                 />
               </label>
             </div>

@@ -16,7 +16,7 @@ class App extends React.Component {
       phone: '',
       linkedin: '',
       github: '',
-      design: 'design-1'
+      design: '1'
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleReset = this.handleReset.bind(this);
@@ -41,9 +41,9 @@ class App extends React.Component {
     });
   }
 
-  handleChangeRadio(name, changeValue) {
+  handleChangeRadio(changeValue) {
     this.setState({
-      [name]: changeValue
+      design: changeValue
     });
   }
 
