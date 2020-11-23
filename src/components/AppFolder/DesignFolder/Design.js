@@ -57,9 +57,9 @@ class Design extends React.Component {
                   value="1"
                   name="design"
                   onChange={this.handleChangeRadio}
-                  checkedStatus={
-                    this.props.data.design === 'design-1' ? true : false
-                  }
+                  // checkedStatus={
+                  //   this.props.data.design === '1' ? true : false
+                  // }
                 />
               </label>
             </div>
@@ -72,9 +72,9 @@ class Design extends React.Component {
                   value="2"
                   name="design"
                   onChange={this.handleChangeRadio}
-                  checkedStatus={
-                    this.props.data.design === 'design-2' ? true : false
-                  }
+                  // checkedStatus={
+                  //   this.props.data.design === '2' ? true : false
+                  // }
                 />
               </label>
             </div>
@@ -87,9 +87,9 @@ class Design extends React.Component {
                   value="3"
                   name="design"
                   onChange={this.handleChangeRadio}
-                  checkedStatus={
-                    this.props.data.design === 'design-3' ? true : false
-                  }
+                  // checkedStatus={
+                  //   this.props.data.design === '3' ? true : false
+                  // }
                 />
               </label>
             </div>
