@@ -58,7 +58,11 @@ class Share extends React.Component {
               La tarjeta ha sido creada
             </h3>
             <a className="link link--share" href="" target="_blank"></a>
-            <a href="" className="button--share" target="_blank">
+            <a
+              // href={`https://twitter.com/intent/tweet?text=${twitter}&url=${props.apiCardUrl}`}
+              className="button--share"
+              target="_blank"
+            >
               <i className="fa fa-twitter" aria-hidden="true"></i>Compartir en
               twitter
             </a>

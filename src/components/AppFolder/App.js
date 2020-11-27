@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../HeaderFolder/Header';
 import Main from '../MainFolder/Main';
 import Footer from '../FooterFolder/Footer';
+import GetApi from '../service/GetApi';
 
 //Create props to pass to Preview
 
