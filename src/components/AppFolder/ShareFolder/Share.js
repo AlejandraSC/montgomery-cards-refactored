@@ -12,6 +12,7 @@ class Share extends React.Component {
       isClose: false
     };
   }
+
   handleClick() {
     this.setState({
       isOpen: !this.state.isOpen
@@ -22,13 +23,13 @@ class Share extends React.Component {
       isClose: !this.state.isClose
     });
   }
+
   render() {
     const tweet =
       'Las Montgomery Card Refactored me han ayudado a crear esta tarjeta';
     const openClassName = this.state.isOpen ? '' : 'hidden';
     const rotateArrow = this.state.isOpen ? 'rotate' : '';
-    const closeClassName = this.props.data.apiSuccess ? '' : 'hidden';
-
+    const closeClassName = this.state.isClose ? '' : 'hidden';
     return (
       <fieldset className="fieldset section__share">
         <div className="section__share--collapsable uppercase">
@@ -50,7 +51,6 @@ class Share extends React.Component {
               type="button"
               className="button--create uppercase"
               onClick={this.handleClickTwitter}
-              // onClick={this.props.sendRequest}
             >
               <i className="fa fa-id-card" aria-hidden="true"></i>
               Crear tarjeta
