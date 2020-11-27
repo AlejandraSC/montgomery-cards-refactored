@@ -5,8 +5,11 @@ class Share extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.handleClickTwitter = this.handleClickTwitter.bind(this);
+
     this.state = {
-      isOpen: false
+      isOpen: false,
+      isClose: false
     };
   }
   handleClick() {
@@ -14,9 +17,16 @@ class Share extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
+  handleClickTwitter() {
+    this.setState({
+      isClose: !this.state.isClose
+    });
+  }
   render() {
     const openClassName = this.state.isOpen ? '' : 'hidden';
     const rotateArrow = this.state.isOpen ? 'rotate' : '';
+    const closeClassName = this.state.isClose ? '' : 'hidden';
+
     return (
       <fieldset className="fieldset section__share">
         <div className="section__share--collapsable uppercase">
@@ -34,12 +44,16 @@ class Share extends React.Component {
         </div>
         <section className={`section__link ${openClassName}`}>
           <article className="section__link--share hidden--border">
-            <button type="button" className="button--create uppercase">
+            <button
+              type="button"
+              className="button--create uppercase"
+              onClick={this.handleClickTwitter}
+            >
               <i className="fa fa-id-card" aria-hidden="true"></i>
               Crear tarjeta
             </button>
           </article>
-          <article className="section__link--twitter hidden">
+          <article className={`section__link--twitter ${closeClassName}`}>
             <h3 className="section__share--subtitle">
               La tarjeta ha sido creada
             </h3>
