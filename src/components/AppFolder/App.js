@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../HeaderFolder/Header';
 import Main from '../MainFolder/Main';
 import Footer from '../FooterFolder/Footer';
-import GetApi from '../service/GetApi';
+import apiCall from '../../services/GetApi';
 
 //Create props to pass to Preview
 
@@ -64,7 +64,7 @@ class App extends React.Component {
       palette: this.state.design,
       photo: this.state.profileImage
     };
-    GetApi(apiData).then((response) => {
+    apiCall(apiData).then((response) => {
       if (response.success === true) {
         this.setState({
           apiSuccess: true,

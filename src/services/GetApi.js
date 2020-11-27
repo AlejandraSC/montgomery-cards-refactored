@@ -1,6 +1,6 @@
 const url = 'https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/';
 
-function GetApi(data) {
+function apiCall(data) {
   return fetch(url, {
     method: 'POST',
     body: JSON.stringify(data),
@@ -13,13 +13,10 @@ function GetApi(data) {
     })
     .then(function (result) {
       return result;
-    })
-    .catch(function (error) {
-      return {
-        success: false,
-        error: 'Se ha producido un error, multiplicate por 0'
-      };
     });
+  // .catch(function (error) {
+  //   return { success: false, error: 'Se ha producido un error!!' };
+  // });
 }
 
-export default GetApi;
+export default apiCall;
