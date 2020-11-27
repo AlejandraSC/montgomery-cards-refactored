@@ -62,9 +62,10 @@ class Share extends React.Component {
             </h3>
             <a
               href={this.props.data.apiCardUrl}
-              className="link link--share"
+              className={`link link--share ${closeClassName}`}
               target="_blank"
             >
+              {' '}
               {this.props.data.apiSuccess
                 ? this.props.data.apiCardUrl
                 : this.props.data.apiError}
