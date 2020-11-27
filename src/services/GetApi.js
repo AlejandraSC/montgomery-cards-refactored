@@ -1,4 +1,4 @@
-const url = 'https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/';
+/*const url = 'https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/';
 
 function GetApi(data) {
   return fetch(url, {
@@ -22,4 +22,4 @@ function GetApi(data) {
     });
 }
 
-export default GetApi;
+export default GetApi; */

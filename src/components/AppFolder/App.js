@@ -2,7 +2,10 @@ import React from 'react';
 import Header from '../HeaderFolder/Header';
 import Main from '../MainFolder/Main';
 import Footer from '../FooterFolder/Footer';
-import GetApi from '../service/GetApi';
+//import GetApi from '../service/GetApi';
+import Landing from '../Landing/Landing';
+
+import { Route, Switch } from 'react-router-dom';
 
 //Create props to pass to Preview
 
@@ -25,7 +28,7 @@ class App extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleReset = this.handleReset.bind(this);
     this.handleChangeRadio = this.handleChangeRadio.bind(this);
-    this.sendRequest = this.sendRequest.bind(this);
+    //this.sendRequest = this.sendRequest.bind(this);
   }
 
   handleChange(inputValue, inputValueId) {
@@ -52,6 +55,7 @@ class App extends React.Component {
     });
   }
 
+  /*
   // fetch
   sendRequest() {
     const apiData = {
@@ -64,7 +68,7 @@ class App extends React.Component {
       palette: this.state.design,
       photo: this.state.profileImage
     };
-    GetApi(apiData).then((response) => {
+  GetApi(apiData).then((response) => {
       if (response.success === true) {
         this.setState({
           apiSuccess: true,
@@ -80,19 +84,26 @@ class App extends React.Component {
         });
       }
     });
-  }
+  }  */
 
   render() {
     return (
       <>
-        <Header></Header>
-        <Main
-          data={this.state}
-          handleChange={this.handleChange}
-          handleReset={this.handleReset}
-          handleChangeRadio={this.handleChangeRadio}
-          sendRequest={this.sendRequest}
-        ></Main>
+        <Switch>
+          <Route exact path="/">
+            <Landing />{' '}
+          </Route>
+          <Route exact path="/home">
+            <Header></Header>
+            <Main
+              data={this.state}
+              handleChange={this.handleChange}
+              handleReset={this.handleReset}
+              handleChangeRadio={this.handleChangeRadio}
+              sendRequest={this.sendRequest}
+            ></Main>
+          </Route>
+        </Switch>
         <Footer></Footer>
       </>
     );
