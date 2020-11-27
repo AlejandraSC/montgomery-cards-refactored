@@ -24,7 +24,7 @@ class Share extends React.Component {
   }
   render() {
     const tweet =
-      'Las chicas de Montgomery Card Refactored me han ayudado a crear esta tarjeta';
+      'Las Montgomery Card Refactored me han ayudado a crear esta tarjeta';
     const openClassName = this.state.isOpen ? '' : 'hidden';
     const rotateArrow = this.state.isOpen ? 'rotate' : '';
     const closeClassName = this.props.data.apiSuccess ? '' : 'hidden';
