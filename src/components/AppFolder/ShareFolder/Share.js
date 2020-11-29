@@ -12,21 +12,25 @@ class Share extends React.Component {
       isClose: false
     };
   }
+
   handleClick() {
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
   handleClickTwitter() {
+    this.props.sendRequest();
     this.setState({
       isClose: !this.state.isClose
     });
   }
+
   render() {
+    const tweet =
+      'Las Montgomery Card Refactored me han ayudado a crear esta tarjeta';
     const openClassName = this.state.isOpen ? '' : 'hidden';
     const rotateArrow = this.state.isOpen ? 'rotate' : '';
     const closeClassName = this.state.isClose ? '' : 'hidden';
-
     return (
       <fieldset className="fieldset section__share">
         <div className="section__share--collapsable uppercase">
@@ -57,9 +61,20 @@ class Share extends React.Component {
             <h3 className="section__share--subtitle">
               La tarjeta ha sido creada
             </h3>
-            <a className="link link--share" href="" target="_blank"></a>
             <a
-              // href={`https://twitter.com/intent/tweet?text=${twitter}&url=${props.apiCardUrl}`}
+              target="_blank"
+              href={this.props.data.apiCardUrl}
+              className={`link link--share ${closeClassName}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {' '}
+              {this.props.data.apiSuccess
+                ? this.props.data.apiCardUrl
+                : this.props.data.apiError}
+            </a>
+            <a
+              href={`https://twitter.com/intent/tweet?text=${tweet}&url=${this.props.data.apiCardUrl}`}
               className="button--share"
               target="_blank"
             >

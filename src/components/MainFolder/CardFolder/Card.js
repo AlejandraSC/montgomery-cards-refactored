@@ -17,7 +17,10 @@ class Card extends React.Component {
           handleChangeRadio={this.props.handleChangeRadio}
           data={this.props.data}
         ></CardsFill>
-        <Share></Share>
+        <Share
+          sendRequest={this.props.sendRequest}
+          data={this.props.data}
+        ></Share>
       </form>
     );
   }
