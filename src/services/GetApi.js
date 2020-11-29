@@ -14,6 +14,5 @@ function apiCall(data) {
     .then(function (result) {
       return result;
     });
-  
-  }
-export default apiCall
+}
+export default apiCall;

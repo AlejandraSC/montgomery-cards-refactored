@@ -83,14 +83,21 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Header></Header>
-        <Main
-          data={this.state}
-          handleChange={this.handleChange}
-          handleReset={this.handleReset}
-          handleChangeRadio={this.handleChangeRadio}
-          sendRequest={this.sendRequest}
-        ></Main>
+        <Switch>
+          <Route exact path="/">
+            <Landing />{' '}
+          </Route>
+          <Route exact path="/home">
+            <Header></Header>
+            <Main
+              data={this.state}
+              handleChange={this.handleChange}
+              handleReset={this.handleReset}
+              handleChangeRadio={this.handleChangeRadio}
+              sendRequest={this.sendRequest}
+            ></Main>
+          </Route>
+        </Switch>
         <Footer></Footer>
       </>
     );
