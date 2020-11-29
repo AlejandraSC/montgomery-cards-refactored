@@ -71,7 +71,6 @@ class App extends React.Component {
           apiCardUrl: response.cardURL,
           apiError: ''
         });
-        console.log(this.state.apiCardUrl);
       } else {
         this.setState({
           apiSuccess: false,
@@ -80,6 +79,26 @@ class App extends React.Component {
         });
       }
     });
+  }
+  setLocalStorage() {
+    const data = JSON.stringify(this.state);
+    localStorage.setItem('cardData', data);
+  }
+
+  getLocalStorage() {
+    const savedData = JSON.parse(localStorage.getItem('cardData'));
+    if (savedData !== null) {
+      this.setState({
+        palette: savedData.design,
+        name: savedData.name,
+        job: savedData.job,
+        email: savedData.email,
+        telephone: savedData.telephone,
+        linkedin: savedData.linkedin,
+        github: savedData.github,
+        profile: savedData.profileImage
+      });
+    }
   }
 
   render() {

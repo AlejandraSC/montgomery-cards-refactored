@@ -19,6 +19,7 @@ class Share extends React.Component {
     });
   }
   handleClickTwitter() {
+    this.props.sendRequest();
     this.setState({
       isClose: !this.state.isClose
     });
@@ -61,9 +62,11 @@ class Share extends React.Component {
               La tarjeta ha sido creada
             </h3>
             <a
+              target="_blank"
               href={this.props.data.apiCardUrl}
               className={`link link--share ${closeClassName}`}
               target="_blank"
+              rel="noreferrer"
             >
               {' '}
               {this.props.data.apiSuccess
