@@ -14,9 +14,6 @@ function apiCall(data) {
     .then(function (result) {
       return result;
     });
-  // .catch(function (error) {
-  //   return { success: false, error: 'Se ha producido un error!!' };
-  // });
-}
-
-export default apiCall;
+  
+  }
+export default apiCall
